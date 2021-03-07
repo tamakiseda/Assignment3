@@ -107,7 +107,8 @@
             function updateSelect(e){
                 val= d3.select("select").node().value
                 fdata=d3.filter(data,e=>e.date==val)               
-                fdata=fdata.slice(0,10);
+                fdata=fdata.slice(0,10)  
+                fdata=fdata.sort(d3.ascending);
                 updateTable(fdata)
                 updateChart(fdata)
             }
@@ -142,7 +143,7 @@
             }
 
             function colorP() {
-                d3.selectAll("p").style("color", "red");
+                d3.selectAll("p").style("color", "yellow");
             }
         </script>
     </body>
