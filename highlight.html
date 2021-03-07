@@ -12,16 +12,16 @@
             }
 
             .name {
-                color: red;
-                border: solid black 1pt;
+                color: #d9ff00;
+                border: solid hsl(46, 93%, 55%) 2pt;
             }
 
             .name:hover {
-                border-width: 2pt;
+                border-width: 3pt;
             }
 
             .date {
-                color: rgb(88, 208, 255);
+                color: rgb(130, 90, 221);
             }
             .date:hover
             {
@@ -53,7 +53,7 @@
                     "value":"valor"
                 }
             var data, maxValue;
-            csv_url = false ? "category-brands.csv" : "https://raw.githubusercontent.com/bernardo-dauria/2021-02-10-example/main/category-brands.csv"
+            csv_url = false ? "category-brands.csv" : "https://raw.githubusercontent.com/tamakiseda/Assignment3/master/category-brands.csv"
             d3.csv(csv_url).then(tidying)
 
             function updateTable(d) {
